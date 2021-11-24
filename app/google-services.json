@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1073473286711",
+    "project_id": "jharkhand-tourism-37c8a",
+    "storage_bucket": "jharkhand-tourism-37c8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073473286711:android:ea7429a171d058c13f45b2",
+        "android_client_info": {
+          "package_name": "com.jharkhandtourism.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073473286711-ojtc8qqkont0hmsilird87ugb10840df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKcmKcz4hQFyBXsIdFIxveX4QU8dOHEFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073473286711-ojtc8qqkont0hmsilird87ugb10840df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

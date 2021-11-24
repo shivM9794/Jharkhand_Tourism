@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+    >
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_61"
+            android:text="Ranchi"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageMap"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/map"
+            android:layout_marginHorizontal="6dp"
+            android:padding="4dp"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_primary"
+        android:layout_marginTop="2dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+                android:scaleType="matrix"
+                android:src="@drawable/city1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_on_primary"
+                android:text="About"
+                android:paddingHorizontal="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_61"
+                android:text="Ranchi is the capital of the Indian state of Jharkhand. Ranchi was the centre of the Jharkhand movement, which called for a separate state for the tribal regions of South Bihar, northern Orissa, western West Bengal and the eastern area of what is present-day Chhattisgarh. The Jharkhand state was formed on 15 November 2000 by carving out the Bihar divisions of Chota Nagpur and Santhal Parganas. Ranchi has been selected as one of the hundred Indian cities to be developed as a smart city under PM Narendra Modi's flagship Smart Cities Mission."
+                android:paddingHorizontal="8dp"
+                android:textSize="14sp"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_on_primary"
+                android:text="Tourist Attractions"
+                android:paddingHorizontal="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_touristAttractions"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_on_primary"
+                android:text="Hotels &amp; Restaurants"
+                android:paddingHorizontal="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_hotels"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_on_primary"
+                android:text="Religious Places"
+                android:paddingHorizontal="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_religious"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_on_primary"
+                android:text="Natural Beauty"
+                android:paddingHorizontal="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_natural"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

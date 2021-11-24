@@ -1,0 +1,475 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="horizontal">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_main" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_primary_variant" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="home"
+
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/clients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Home"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_client"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="scanImage"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_scanner"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/ScanImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Scan"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="plan"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_roadmap"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Plan"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/div_location"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="nearBy"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_address"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/tv_nearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Near By"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="profile"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_profile"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Profile"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_ar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="ar"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_3d"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/tv_ar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="AR"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_lr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="languageTranslator"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_translate"
+                    app:tint="@color/color_primary_variant" />
+
+                <TextView
+                    android:id="@+id/tv_language_translator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Language Translator"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="logOut"
+
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding_left"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding_left">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_icon"
+                    android:layout_height="@dimen/drawer_icon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_log_out"
+                    app:tint="@color/color_primary_variant" />
+
+
+                <TextView
+                    android:id="@+id/logOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/drawer_item_padding_left"
+                    android:paddingTop="@dimen/drawer_item_padding"
+                    android:paddingRight="@dimen/drawer_item_padding_left"
+                    android:paddingBottom="@dimen/drawer_item_padding"
+                    android:text="Log Out"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="16sp"
+                    app:drawableTint="@color/drawer_drawable_color" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/drawer_item_padding_left"
+                android:background="@color/divider_color"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=""
+                android:textSize="16sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_click"
+                android:paddingLeft="@dimen/drawer_item_padding_left"
+                android:paddingTop="@dimen/drawer_item_padding"
+                android:paddingRight="@dimen/drawer_item_padding_left"
+                android:paddingBottom="@dimen/drawer_item_padding"
+                android:text="Version 0.0"
+                android:textColor="@color/divider_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</HorizontalScrollView>

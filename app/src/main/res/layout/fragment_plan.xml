@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/recommended_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Recommended For You"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/recommended_sub_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Tours and activities tailored to your interests"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recommended_tv" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRecommendedRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/recommended_sub_tv" />
+
+            <TextView
+                android:id="@+id/service_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Business Trip To Jharkhand"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idRecommendedRecycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idPlanRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/service_tv" />
+
+            <TextView
+                android:id="@+id/idTxtFamilyTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Family trip to Jharkhand"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idPlanRecycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idFTRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/idTxtFamilyTrip" />
+
+            <TextView
+                android:id="@+id/idTxtReligious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Religious Trip to Jharkhand"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idFTRecycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idReligiousRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/idTxtReligious" />
+
+
+            <TextView
+                android:id="@+id/idTxtNatural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:text="Natural Site"
+                android:textColor="@color/color_primary_on_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idReligiousRecycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idNaturalRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/idTxtNatural" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_61"
+        android:text="Place"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_primary"
+        android:layout_marginTop="4dp"
+        />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="@color/color_primary_variant"
+        android:background="@color/white"
+        app:tabTextColor="@color/color_61"
+        app:tabSelectedTextColor="@color/color_primary_variant"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabPaddingBottom="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingTop="-1dp"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pager"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
